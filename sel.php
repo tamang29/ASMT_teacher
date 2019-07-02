@@ -1,7 +1,7 @@
 <?php
 
 
-if(!(isset($_SESSION['user'])))
+if(!isset($_SESSION['user']))
 {
     
     header('location:form.php');
@@ -9,14 +9,7 @@ if(!(isset($_SESSION['user'])))
 }
 
 
-?>
-
-
-
-
-</head>
-<body style="background:mintcream;">
-    
+?>  
 <table border="1"  cellspacing="0px" width="600px" cellpadding="20px" align="center" >
 <caption>Student Information</caption>
 <tr>
@@ -43,8 +36,8 @@ while($row=mysqli_fetch_array($se,MYSQLI_ASSOC))
     <td><?php echo $row['name'];?></td>
     <td><?php echo $row['address'];?></td>
     <td><?php echo $row['gender'];?></td>
-    <td><a href="index.php?od=<?php echo $row['sn'];?>" ><abbr title="Edit"><img src="image/pencil.png" style="height:20px;" id="hov"></abbr></a>
-    <a href="newselect.php?od=<?php echo $row['sn'];?>" onclick="return delete_data();" id="delet" style="background:silver;border-radius:20px;border:none;"><abbr title="Delete"><img src="image/bin.png" style="height:20px;"></abbr></a>
+    <td><a href="index.php?od=<?php echo $row['sn'];?>" ><abbr title="Edit"><i class="fas fa-edit" style="color:black;"></i></abbr></a>
+    <a href="newselect.php?od=<?php echo $row['sn'];?>" onclick="return delete_data();" id="delet" style="background:white;border-radius:20px;border:none;color:black;"><abbr title="Delete"><i class="fas fa-minus-circle"></i></abbr></a>
     <a href="view.php?od=<?php echo $row['sn']?>" id="picnic" name="pic">
     <abbr title="view">
     <i class="fas fa-eye" style="color:black;"></i></abbr></a></td>
@@ -59,7 +52,7 @@ while($row=mysqli_fetch_array($se,MYSQLI_ASSOC))
 
 
 </table>
-<a href="studentform.html"><button id="new">Add New!</button></a>
+
 <script type="text/javascript">
 function delete_data(){
     var del=confirm("Are you sure you want to delete this record?");

@@ -93,6 +93,7 @@ background: #e6e6ff;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 10px;
     margin-left: 15px;
+    outline: none;
 }
 #btn:hover{
     background: #f44336;
@@ -117,7 +118,7 @@ background: #e6e6ff;
     outline: none;
     transition: all .5s ease-in-out;
 }
-#navi:hover,#search:hover{
+#navi:hover{
     background: black;
     color: white;
     transition: all .5s ease-in-out;
@@ -140,7 +141,8 @@ background: #e6e6ff;
     float: left;
     border: none;
     height: 40px;
-   
+   background: black;
+   color: white;
     margin-left: 0px;
     cursor: pointer;
     outline: none;
@@ -156,6 +158,7 @@ background: #e6e6ff;
 .table{
     float: left;
     height: 1200px;width:100%;
+
     
    
 }
@@ -164,8 +167,8 @@ background: #e6e6ff;
     height:auto;
     width: 60%;
     text-align: center;
-    margin-top:4%;
-    margin-left: 10px;
+    margin:4%;
+    
     
     
 
@@ -179,9 +182,10 @@ th{
     padding: 10px 20px;
 }
 table{
-    background-color:silver;
+    background-color:;
     border:none;
     width: 100%;
+    color:grey;
 }
 #hov:hover{
     transform:rotate(360deg);
@@ -202,6 +206,7 @@ caption{
 tr td{
     font-family: 'Noto Sans TC', sans-serif;
     padding: 10px 20px;
+    font-size: 13px;
 }
 #new{
     float: left;
@@ -224,10 +229,10 @@ tr td{
 
 #addnew,#updatenow{
     float: left;
-    height: 30%;
-    width: 35%;
-    background: #f2f2f2;
-    margin: 3% 2%;
+    height: auto;
+    width: 30%;
+    background: #e6e6ff;
+    margin-top: 2%;
     box-shadow: 0px 8px 16px 0px #212121;
     border-radius: 5px;
 }
@@ -235,31 +240,32 @@ tr td{
 
 form{float: left;}
 label{
-    height: 40px;
-    width:20%;
+    height: 30px;
+    width:15%;
     display: block;
     float: left;
     background: #37474F;
     color: white;
-    margin: 20px 0;
+    margin: 10px 5px;
     padding-left: 20px;
     padding-right: 20px;
-    line-height: 50px;
-    margin-left: 5px;
-    font-size: 18px;
+    line-height: 30px;
+    
+    font-size: 15px;
     border-radius: 5px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    
 }
 .forms form input{
     float: left;
     width: 60%;
-    height: 40px;
-    margin: 20px 0;
+    height: 30px;
+    margin: 10px 0;
     border-radius: 5px; 
     border:none;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     padding-left: 5px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -270,21 +276,21 @@ label{
     background: unset !important;
 }
 .forms form button{
+   
     position: relative;
-    top: 20px;
+    top: 10px;
     left: 40px;
     height: 30px;
     width: 60px;
     border: none;
-    float: left;
     border:none;
     width:20%;
-    
-    border-radius: 20px;
+    outline: none;
+    border-radius: 5px;
     height: 30px;
     cursor: pointer;
     font-variant: small-caps;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     background-color: #B2EBF2;
 }
